@@ -14,12 +14,24 @@ body {
 
 img {
   width: 10rem;
+
 }
 
 main {
   border: 1px solid black;
   width: 72rem;
-  padding: 1rem 0;
+  padding: 20px;
+  transform: scale(0.9);
+  position: relative;
+
+  #watermark{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 250px);
+    top:calc(50% - 250px);
+    opacity: 0.2;
+  }
 }
 
 table#first {
@@ -314,4 +326,8 @@ div#sixth {
   span {
     font-weight: bold;
   }
+}
+
+@media print{
+
 }
